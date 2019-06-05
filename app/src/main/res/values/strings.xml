@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maze.01</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_start">Start</string>
+    <string name="button_quit">Quit</string>
+    <string name="radio_tap">Tap Mode</string>
+    <string name="radio_swipe">Swipe Mode</string>
+    <string name="title_activity_game">Maze</string>
+    <string name="button_close">Close</string>
+    <string name="button_newMaze">New maze</string>
+    <string name="desc_buttonUp">The up button</string>
+    <string name="desc_buttonDown">The down button</string>
+    <string name="desc_buttonLeft">The left button</string>
+    <string name="desc_buttonRight">The right button</string>
+    <string name="escape_text">You have escaped!</string>
+
+</resources>

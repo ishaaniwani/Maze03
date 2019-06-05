@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MazeActivity" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonBar" >
+
+        <com.eimacs.drawmaze01.MazeSurfaceView
+            android:id="@+id/mazeSurfaceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#668066" />
+
+        <ImageButton
+            android:id="@+id/buttonup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/buttonup"
+            android:contentDescription="@string/desc_buttonUp" />
+
+        <ImageButton
+            android:id="@+id/buttonleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/buttonleft"
+            android:contentDescription="@string/desc_buttonLeft" />
+
+        <ImageButton
+            android:id="@+id/buttonright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/buttonright"
+            android:contentDescription="@string/desc_buttonRight" />
+
+        <ImageButton
+            android:id="@+id/buttondown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/buttondown"
+            android:contentDescription="@string/desc_buttonDown" />
+
+        <TextView
+            android:id="@+id/escapeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/escape_text"
+            android:textColor="#ffff00"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="newMaze"
+            android:text="@string/button_newMaze" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="close"
+            android:text="@string/button_close" />
+    </LinearLayout>
+
+</RelativeLayout>
